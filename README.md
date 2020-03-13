@@ -72,6 +72,18 @@ Circuito simples que demonstra utilização de sensor de rádio-frequência RFID
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76631749-f448ec00-6520-11ea-864e-5175b01aba86.png">
   <img src="https://user-images.githubusercontent.com/22710963/76631749-f448ec00-6520-11ea-864e-5175b01aba86.png" alt="reset" style="max-width:100%;"></a></p> 
 
+## Instalando bibliotecas
+
+
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76664923-bc639800-6564-11ea-983c-908083cd7fad.png">
+  <img src="https://user-images.githubusercontent.com/22710963/76664923-bc639800-6564-11ea-983c-908083cd7fad.png" alt="reset" style="max-width:100%;"></a></p> 
+
+
+
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76664944-d309ef00-6564-11ea-8e9c-adbbab1637dc.png">
+  <img src="https://user-images.githubusercontent.com/22710963/76664944-d309ef00-6564-11ea-8e9c-adbbab1637dc.png" alt="reset" style="max-width:100%;"></a></p> 
+
+
 ## Instalação dos Leds
 Perna maior do LED é ligado no positivo e a perna menor precisa de um resistor de 220 ou 330 Ohm entre a ligação com o GND (negativo)
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73712954-7ce69800-46ea-11ea-980e-bec2802b2c12.png">

@@ -5,7 +5,7 @@ Circuito simples que demonstra utilização de sensor de rádio-frequência RFID
 ### Demonstração (vídeo)
 <p>
  <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/SEVQkE6yt_E" target="_blank">
-  <img src="" alt="reset" style="max-width:100%;"></a>
+  <img src="https://user-images.githubusercontent.com/22710963/76633573-b39ea200-6523-11ea-85cf-a62399220a69.png" alt="reset" style="max-width:100%;"></a>
 </p> 
 
 ### Software necessário

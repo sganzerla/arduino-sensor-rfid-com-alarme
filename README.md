@@ -60,6 +60,9 @@ Circuito simples que demonstra utilização de sensor de rádio-frequência RFID
   <img src="https://user-images.githubusercontent.com/22710963/75093434-77010b80-5560-11ea-992d-5a833cd84f27.png" alt="reset" style="max-width:100%;"></a></p> 
    
  ### g) Sensor de rádio-frequência RFID RC522
+ 
+ Não tinha soldador nesse dia, então pluguei os jumpers nos buracos do sensor em cima da protoboard, então ao mesmo tempo que passava corrente fixava-os.
+ 
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76631749-f448ec00-6520-11ea-864e-5175b01aba86.png">
   <img src="https://user-images.githubusercontent.com/22710963/76631749-f448ec00-6520-11ea-864e-5175b01aba86.png" alt="reset" style="max-width:100%;"></a></p> 
 

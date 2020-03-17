@@ -14,6 +14,7 @@
  </p>
 
 <p> 
+   
   - Modos de transmissão:
 
   - Passiva: um dispositivo gera o sinal de conexão e o outro apenas o recebe. Cartões, etiquetas etc...
@@ -28,6 +29,7 @@
 
 ### Frequência sinal
 <p>
+   
    - LF (Low Frequency / Baixa frequência): 125 - 134kHz. Uso em animais com chip na pele, controle de acesso. Alcance de 10cm.
    
    - HF (High Frequency / Alta frequência): 13.56MHz. Uso em NFC, SmartCards, Tickets. Alcance até 30cm.
@@ -38,6 +40,7 @@
 
  ### Diferenças entre os dois
  <p>
+   
   - O RFID é a tecnologia que sustenta o NFC, o NFC é um subconjunto especializado do RFID.
 
   - NFC é capaz de comunicar-se bidirecionalmente e opera em três modos de comunicação: leitura/escrita, ponto a ponto e emulação de cartão.

@@ -119,7 +119,9 @@ Perna maior do LED é ligado no positivo e a perna menor precisa de um resistor 
 ### Links úteis
 > [Manual do mundo](https://youtu.be/gcBN4NLqz_U)
 
-> [Tutorial RFID](https://www.viralsciencecreativity.com/post/arduino-rfid-sensor-mfrc522-tutorial)
+> [Viral Science Creativity](https://www.viralsciencecreativity.com/post/arduino-rfid-sensor-mfrc522-tutorial)
+
+> [Eletro Gate](https://blog.eletrogate.com/guia-basico-da-nfc-para-arduino/)
 
 ###  Aplicações
 <p> Mecanismo anti-furto para itens de lojas </p>

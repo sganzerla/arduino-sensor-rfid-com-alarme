@@ -1,9 +1,13 @@
-# NFC ("Near Field Communication") e RFID ("Radio-Frequency IDentification")   
+# RFID X NFC 
    
 <p>
-    Tecnologias que permitem troca de informações entre disposivos compátiveis sem ligação por fios, a conexão é estabelecida automaticamente sem necessidade de configuração adicional.
+   RFID ("Radio-Frequency IDentification") e NFC ("Near Field Communication") são tecnologias que permitem troca de informações entre disposivos compátiveis sem ligação por fios, a conexão é estabelecida automaticamente sem necessidade de configuração adicional.
 </p> 
-  
+
+  ## RFID
+ <p>
+ Permite conectividade sem fio unidirecional, pode operar em bandas de frequência baixa (LF) de 125kHz, alta (HF) de 13,56 MHz e ultra-alta (UHF) entre 860 a 960MHz alcançando distãncias de 10 a 100m. As primeiras aplicações dessa tecnologia foram na 2ª Guerra Mundial para detectar aproximação de aviões.
+   
  ## NFC
  <p>
  Permite conectividade sem fio de curto alcance uniderecional e bidirecional, até 10cm próximo do leitor, garantindo uma certa segurança pois fica quase impossível interceptar devida a curta distância entre os dispositivos. Opera numa onde de rádio de alta frequência de 13.56 MHz.
@@ -20,17 +24,21 @@
 
   - Ponto a ponto: ambos dispositivos podem enviar e receber dados um pro outro. Troca de arquivos entre smartphones.
 
-</p> 
+</p>
 
- ### RFID
- <p>
- Permite conectividade sem fio unidirecional, pode operar em bandas de frequência baixa (LF), alta (HF) e ultra-alta (UHF) alcançando distãncias de 10 a 100m. 
-
+### Frequência sinal
+<p>
+   - LF (Low Frequency / Baixa frequência): 125 - 134kHz. Uso em animais, controle de acesso. Alcance de 10cm.
+   
+   - HF (High Frequency / Alta frequência): 13.56MHz. Uso em NFC, SmartCards, Tickets. Alcance até 30cm.
+   
+   - UHF (Ultra-High Frequency / Ultra Alta Frequência): 433MHz - 856 - 960MHz. Alcance até mais de 100m.
+</p>
  </p>
 
  ### Diferenças entre os dois
  <p>
-  -  O RFID é a tecnologia que sustenta o NFC, o NFC é um subconjunto especializado do RFID.
+  - O RFID é a tecnologia que sustenta o NFC, o NFC é um subconjunto especializado do RFID.
 
   - NFC é capaz de comunicar-se bidirecionalmente e opera em três modos de comunicação: leitura/escrita, ponto a ponto e emulação de cartão.
 

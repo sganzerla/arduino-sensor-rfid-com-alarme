@@ -42,7 +42,9 @@
 Fonte:
 <p>
 - (Tag-Id)[https://www.tag-id.com.br/blog/rfid-vs-nfc/]
+   
 - (NFC-Forum)[https://nfc-forum.org/]
+
 - (Eletro Gate)[https://blog.eletrogate.com/guia-basico-da-nfc-para-arduino/]
 
 </p>

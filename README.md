@@ -114,9 +114,10 @@ Perna maior do LED é ligado no positivo e a perna menor precisa de um resistor 
   <img src="https://user-images.githubusercontent.com/22710963/73806830-5cc9de00-47a9-11ea-887a-f13d09948aea.png" alt="reset" style="max-width:100%;"></a>
 </p> 
 
-
-
 ### Links úteis
+
+> [RFID X NFC](https://github.com/sganzerla/arduino-sensor-rfid-com-alarme/blob/master/doc/README.md)
+
 > [Manual do mundo](https://youtu.be/gcBN4NLqz_U)
 
 > [Viral Science Creativity](https://www.viralsciencecreativity.com/post/arduino-rfid-sensor-mfrc522-tutorial)

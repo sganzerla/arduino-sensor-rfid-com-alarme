@@ -28,11 +28,11 @@
 
 ### Frequência sinal
 <p>
-   - LF (Low Frequency / Baixa frequência): 125 - 134kHz. Uso em animais, controle de acesso. Alcance de 10cm.
+   - LF (Low Frequency / Baixa frequência): 125 - 134kHz. Uso em animais com chip na pele, controle de acesso. Alcance de 10cm.
    
    - HF (High Frequency / Alta frequência): 13.56MHz. Uso em NFC, SmartCards, Tickets. Alcance até 30cm.
    
-   - UHF (Ultra-High Frequency / Ultra Alta Frequência): 433MHz - 856 - 960MHz. Alcance até mais de 100m.
+   - UHF (Ultra-High Frequency / Ultra Alta Frequência): 433MHz - 856 - 960MHz. Uso para monitorar rebanhos, veículos em pedágios. Alcance até mais de 100m.
 </p>
  </p>
 

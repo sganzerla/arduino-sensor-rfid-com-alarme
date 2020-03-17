@@ -13,6 +13,9 @@ Circuito simples que demonstra utilização de sensor de rádio-frequência RFID
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76663817-119daa80-6561-11ea-96d1-41d7e85ed403.png">
   <img src="https://user-images.githubusercontent.com/22710963/76663817-119daa80-6561-11ea-96d1-41d7e85ed403.png" alt="reset" style="max-width:100%;"></a></p> 
  
+ ### RFID X NFC
+  
+> [RFID X NFC](https://github.com/sganzerla/arduino-sensor-rfid-com-alarme/blob/master/doc/README.md)
 
 ### Software necessário
 
@@ -115,8 +118,6 @@ Perna maior do LED é ligado no positivo e a perna menor precisa de um resistor 
 </p> 
 
 ### Links úteis
-
-> [RFID X NFC](https://github.com/sganzerla/arduino-sensor-rfid-com-alarme/blob/master/doc/README.md)
 
 > [Manual do mundo](https://youtu.be/gcBN4NLqz_U)
 

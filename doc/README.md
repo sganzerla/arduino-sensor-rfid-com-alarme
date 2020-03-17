@@ -35,12 +35,17 @@
   - NFC é capaz de comunicar-se bidirecionalmente e opera em três modos de comunicação: leitura/escrita, ponto a ponto e emulação de cartão.
 
   - NFC só funciona numa distância menor que 10cm.
-  
+
   - NFC só pode ler uma TAG de cada vez.
  </p>
  
+Fonte:
+<p>
+- (Tag-Id)[https://www.tag-id.com.br/blog/rfid-vs-nfc/]
+- (NFC-Forum)[https://nfc-forum.org/]
+- (Eletro Gate)[https://blog.eletrogate.com/guia-basico-da-nfc-para-arduino/]
 
-
+</p>
 
 
   

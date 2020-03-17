@@ -1,11 +1,11 @@
-#include <SPI.h> // biblioteca para o Buzzer
+#include <SPI.h> // biblioteca interface de comunicação com o sensor
 #include <MFRC522.h> // biblioteca para o RFID
  
 #define SS_PIN 10
 #define RST_PIN 9
-#define LED_G 4 //define green LED pin
-#define LED_R 5 //define red LED
-#define BUZZER 2 //buzzer pin
+#define LED_GREEN_PIN 4 //define green LED pin
+#define LED_RED_PIN 5 //define red LED
+#define BUZ_PIN 2 //buzzer pin
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance. 
  
 void setup() 
@@ -14,10 +14,10 @@ void setup()
   SPI.begin();      // Initiate  SPI bus
   mfrc522.PCD_Init();   // Initiate MFRC522
  
-  pinMode(LED_G, OUTPUT);
-  pinMode(LED_R, OUTPUT);
-  pinMode(BUZZER, OUTPUT);
-  noTone(BUZZER);
+  pinMode(LED_GREEN_PIN, OUTPUT);
+  pinMode(LED_RED_PIN, OUTPUT);
+  pinMode(BUZ_PIN, OUTPUT);
+  noTone(BUZ_PIN);
   Serial.println("Put your card to the reader...");
   Serial.println();
 
@@ -53,20 +53,20 @@ void loop()
     Serial.println("Authorized access");
     Serial.println();
     delay(500);
-    digitalWrite(LED_G, HIGH);
-    tone(BUZZER, 500);
+    digitalWrite(LED_GREEN_PIN, HIGH);
+    tone(BUZ_PIN, 500);
     delay(300);
-    noTone(BUZZER); 
+    noTone(BUZ_PIN); 
     delay(5000); 
-    digitalWrite(LED_G, LOW);
+    digitalWrite(LED_GREEN_PIN, LOW);
   }
  
  else   {
     Serial.println(" Access denied");
-    digitalWrite(LED_R, HIGH);
-    tone(BUZZER, 300);
+    digitalWrite(LED_RED_PIN, HIGH);
+    tone(BUZ_PIN, 300);
     delay(1000);
-    digitalWrite(LED_R, LOW);
-    noTone(BUZZER);
+    digitalWrite(LED_RED_PIN, LOW);
+    noTone(BUZ_PIN);
   }
 } 

@@ -70,18 +70,25 @@ Circuito simples que demonstra utilização de sensor de rádio-frequência RFID
    
  ### g) Sensor de rádio-frequência RFID RC522
  
- Não tinha soldador nesse dia, então pluguei os jumpers nos buracos do sensor em cima da protoboard, ao mesmo tempo que passava corrente fixava-os.
+ Este módulo de RFID usa o CI de fabricação Philips MFRC522. Ele foi especialmente desenvolvido para aplicações de escrita e leitura sem contato de cartões principalmente voltadas para controle de acesso. A comunicação é feita através da interface SPI de seu microcontrolador ou placa Arduino. 
  
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76631749-f448ec00-6520-11ea-864e-5175b01aba86.png">
-  <img src="https://user-images.githubusercontent.com/22710963/76631749-f448ec00-6520-11ea-864e-5175b01aba86.png" alt="reset" style="max-width:100%;"></a></p> 
+ - Alimentação: 3,3v
+ 
+ - Frequência: 13.56MHz
+ 
+ - Distância de leitura: 0 - 60mm
+ 
+ - Taxa transmissão: 10Mbit/s
+ 
+ - Cartões compatíveis: mifare1 S50, mifare1 S70, mifare UltraLight, mifarePro, mifare Desfire
+ 
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76887759-7c046280-6861-11ea-85cf-0384be02e345.png">
+  <img src="https://user-images.githubusercontent.com/22710963/76887759-7c046280-6861-11ea-85cf-0384be02e345.png" alt="reset" style="max-width:100%;"></a></p> 
 
 ## Instalando bibliotecas
 
-
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76664923-bc639800-6564-11ea-983c-908083cd7fad.png">
   <img src="https://user-images.githubusercontent.com/22710963/76664923-bc639800-6564-11ea-983c-908083cd7fad.png" alt="reset" style="max-width:100%;"></a></p> 
-
-
 
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76664944-d309ef00-6564-11ea-8e9c-adbbab1637dc.png">
   <img src="https://user-images.githubusercontent.com/22710963/76664944-d309ef00-6564-11ea-8e9c-adbbab1637dc.png" alt="reset" style="max-width:100%;"></a></p> 

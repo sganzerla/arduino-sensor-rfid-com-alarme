@@ -10,7 +10,7 @@
    
  ## NFC
  <p>
- Permite conectividade sem fio de curto alcance uniderecional e bidirecional, até 10cm próximo do leitor, garantindo uma certa segurança pois fica quase impossível interceptar devida a curta distância entre os dispositivos. Opera numa onde de rádio de alta frequência de 13.56 MHz.
+ Permite conectividade sem fio de curto alcance uniderecional e bidirecional, até 30cm próximo do leitor, garantindo uma certa segurança pois fica quase impossível interceptar devida a curta distância entre os dispositivos. Opera numa onda de rádio de alta frequência de 13.56 MHz. Foi desenvolvido num consórcia entre as empresas Philips, Sony e Nokia entre 2002 e 2004.
  </p>
 
 <p> 
@@ -45,7 +45,7 @@
 
   - NFC é capaz de comunicar-se bidirecionalmente e opera em três modos de comunicação: leitura/escrita, ponto a ponto e emulação de cartão.
 
-  - NFC só funciona numa distância menor que 10cm.
+  - NFC só funciona numa distância menor que 30cm.
 
   - NFC só pode ler uma TAG de cada vez.
  </p>

@@ -15,7 +15,10 @@ Circuito simples que demonstra utilização de sensor de rádio-frequência RFID
  
  ### RFID X NFC
   
-> [RFID X NFC](https://github.com/sganzerla/arduino-sensor-rfid-com-alarme/blob/master/doc/README.md)
+> [RFID](https://github.com/sganzerla/embarcados-protocolos-comunicacao/blob/master/RFID/)
+
+> [NFC](https://github.com/sganzerla/embarcados-protocolos-comunicacao/blob/master/NFC/)
+
 
 ### Software necessário
 

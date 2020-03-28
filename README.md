@@ -19,59 +19,26 @@ Circuito simples que demonstra utilização de sensor de rádio-frequência RFID
 
 > [NFC](https://github.com/sganzerla/embarcados-protocolos-comunicacao/blob/master/NFC/)
 
-
-### Software necessário
-
-- [IDE Arduino](https://www.arduino.cc/en/Main/Software)
-- [Documentação sintaxe C++](https://www.arduino.cc/reference/en/)
-
-### Software p/ gerar esquemas de circuitos elétricos 
-
-- Útil para documentar projetos
-
-- Versão paga [Fritzing](https://fritzing.org/home/)
-
-- Versão gratuita (permite que seja atualizada) [Fritzing](https://softfamous.com/fritzing/download/)
-
+    
 ## Hardware necessário
 ```
 - a) 1 Placa Arduino com cabo USB
-- b) 2 Resistores de 220 Ohm ou 330 Ohm
-- c) 2 LEDS comuns de 4mm (cada um de uma cor diferente) 
-- d) 1 Protoboard
-- e) 10-13 Cabos de conexão 
-- f) 1 Buzzer (Autofalante pequeno quebrei um telefone residencial e peguei do gancho)
-- g) 1 Sensor de rádio-frequência RFID RC522 (com duas tags cartões)
+- b) 1 Sensor rádio-frequência RFID RC522
+- c) 2 Tags RFID 
+- d) 1 Buzzer DR-08H
+- e) 2 LEDS de 4mm 1 de cada cor
+- f) 2 Resistores de 220 - 300Ω 
+- g) 1 Protoboard
+- h) 10-13 Cabos de conexão   
 ```
 
- ### a) Placa Arduino com cabo USB
- Porta de 5V e 40mA
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73710418-aac7de80-46e2-11ea-82d4-fabab3361d1f.png">
-  <img src="https://user-images.githubusercontent.com/22710963/73710418-aac7de80-46e2-11ea-82d4-fabab3361d1f.png" alt="reset" style="max-width:100%;"></a></p> 
-
- ### b) Resistores de 220 Ohm ou 330 Ohm 
- Diminuir a tensão, instalada entre o GND e o terra do LED
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73710133-ea41fb00-46e1-11ea-8507-dfc8e3a84346.png">
-  <img src="https://user-images.githubusercontent.com/22710963/73710133-ea41fb00-46e1-11ea-8507-dfc8e3a84346.png" alt="reset" style="max-width:100%;"></a></p> 
+ ### a) Placa Arduino Uno 
  
-  ### c) LEDS comuns de 4mm
-  Diodo com 2V e 15mA, perna maior ligada no positivo
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73710278-4a38a180-46e2-11ea-960c-8c0c3ff97b9c.png">
-  <img src="https://user-images.githubusercontent.com/22710963/73710278-4a38a180-46e2-11ea-960c-8c0c3ff97b9c.png" alt="reset" style="max-width:100%;"></a></p> 
- 
- ### d)  Protoboard 
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73710865-e7e0a080-46e3-11ea-9ec4-4800b2b345b9.png">
-  <img src="https://user-images.githubusercontent.com/22710963/73710865-e7e0a080-46e3-11ea-9ec4-4800b2b345b9.png" alt="reset" style="max-width:100%;"></a></p> 
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77551422-16cbf500-6e91-11ea-850d-7e3989c9f1f2.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77551422-16cbf500-6e91-11ea-850d-7e3989c9f1f2.png" alt="reset" style="max-width:100%;"></a></p> 
 
-  ### e) Cabos de conexão
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73711525-e57f4600-46e5-11ea-8cb9-e9bb27543ea4.png">
-  <img src="https://user-images.githubusercontent.com/22710963/73711525-e57f4600-46e5-11ea-8cb9-e9bb27543ea4.png" alt="reset" style="max-width:100%;"></a></p> 
+  ### b) Sensor rádio-frequência RFID RC522 
 
-  ### f) Buzzer/Autofalante DR-O8H
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/75093434-77010b80-5560-11ea-992d-5a833cd84f27.png">
-  <img src="https://user-images.githubusercontent.com/22710963/75093434-77010b80-5560-11ea-992d-5a833cd84f27.png" alt="reset" style="max-width:100%;"></a></p> 
-   
- ### g) Sensor de rádio-frequência RFID RC522
  
  Este módulo de RFID usa o CI de fabricação Philips MFRC522. Ele foi especialmente desenvolvido para aplicações de escrita e leitura sem contato de cartões principalmente voltadas para controle de acesso. A comunicação é feita através da interface SPI de seu microcontrolador ou placa Arduino. 
  
@@ -85,60 +52,63 @@ Circuito simples que demonstra utilização de sensor de rádio-frequência RFID
  
  - Cartões compatíveis: mifare1 S50, mifare1 S70, mifare UltraLight, mifarePro, mifare Desfire
  
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76887759-7c046280-6861-11ea-85cf-0384be02e345.png">
-  <img src="https://user-images.githubusercontent.com/22710963/76887759-7c046280-6861-11ea-85cf-0384be02e345.png" alt="reset" style="max-width:100%;"></a></p> 
 
-## Instalando bibliotecas
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77814251-0fbe0600-708e-11ea-9677-ef8d057573a1.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77814251-0fbe0600-708e-11ea-9677-ef8d057573a1.png" alt="reset" style="max-width:100%;"></a></p> 
 
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76664923-bc639800-6564-11ea-983c-908083cd7fad.png">
-  <img src="https://user-images.githubusercontent.com/22710963/76664923-bc639800-6564-11ea-983c-908083cd7fad.png" alt="reset" style="max-width:100%;"></a></p> 
-
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76664944-d309ef00-6564-11ea-8e9c-adbbab1637dc.png">
-  <img src="https://user-images.githubusercontent.com/22710963/76664944-d309ef00-6564-11ea-8e9c-adbbab1637dc.png" alt="reset" style="max-width:100%;"></a></p> 
-
-
-## Instalação dos Leds
-Perna maior do LED é ligado no positivo e a perna menor precisa de um resistor de 220 ou 330 Ohm entre a ligação com o GND (negativo)
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73712954-7ce69800-46ea-11ea-980e-bec2802b2c12.png">
-  <img src="https://user-images.githubusercontent.com/22710963/73712954-7ce69800-46ea-11ea-980e-bec2802b2c12.png" alt="reset" style="max-width:100%;"></a></p> 
-  
-  ## Fórmula Lei de Ohm
-  V = R * I
-  
- > O "I" significa a intensidade da corrente elétrica, no entanto, muitas vezes se fala apenas da corrente elétrica (sem a palavra intensidade). Quando existe uma diferença de potencial elétrico entre componentes (polarizado) acontece um fluxo de partículas que equilibra o campo elétrico. Esse fluxo é a corrente elétrica.
+ ### c) Tags RFID  
+    
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77814271-4267fe80-708e-11ea-905a-5ee4e2eedd56.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77814271-4267fe80-708e-11ea-905a-5ee4e2eedd56.png" alt="reset" style="max-width:100%;"></a></p>
  
-> A corrente elétrica é medida em Ampere (A) que nada mais é do que a quantidade de elétrons que passa nesse fio em um tempo determinado!
+ ### d) Buzzer DR-08H
+  <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77565026-62d36580-6ea2-11ea-9a5e-389752b9158f.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77565026-62d36580-6ea2-11ea-9a5e-389752b9158f.png" alt="reset" style="max-width:100%;"></a></p> 
+       
+ ### e) LEDS comuns de 4mm
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499523-14d24980-6e31-11ea-9ee1-2f44635a20be.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77499523-14d24980-6e31-11ea-9ee1-2f44635a20be.png" alt="reset" style="max-width:100%;"></a></p> 
 
-> A tensão elétrica (V) é medida em Volts (V) (em homenagem ao físico Alessandro Volta).
+ ### f) Resistores  
+ <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76045740-c0783000-5f3c-11ea-9188-3b239840fbda.png">
+  <img src="https://user-images.githubusercontent.com/22710963/76045740-c0783000-5f3c-11ea-9188-3b239840fbda.png" alt="reset" style="max-width:100%;"></a></p> 
+  
+  ### g) Protoboard 
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499362-a8574a80-6e30-11ea-9744-a15c3206fd50.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77499362-a8574a80-6e30-11ea-9744-a15c3206fd50.png" alt="reset" style="max-width:100%;"></a></p> 
 
-> A resistência (R) é medida em Ohm (Ω) e a intensidade da corrente elétrica (I) em Ampere (A).
+  ### h) Cabos de conexão
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499606-5662f480-6e31-11ea-96fd-9e268dceb50f.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77499606-5662f480-6e31-11ea-96fd-9e268dceb50f.png" alt="reset" style="max-width:100%;"></a></p> 
 
-> A relação entre tensão, resistência e intensidade da corrente define a Lei de Ohm: V = R * I
-
-> Para calcular a corrente: I = V / R
-
-> Para calcular a resistência: R = V / I
-
-> Para calcular a tensão: V = R * I
-
-### Tabela de Cores dos resistores na convenção internacional
-<p>
- <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/73806830-5cc9de00-47a9-11ea-887a-f13d09948aea.png">
-  <img src="https://user-images.githubusercontent.com/22710963/73806830-5cc9de00-47a9-11ea-887a-f13d09948aea.png" alt="reset" style="max-width:100%;"></a>
-</p> 
 
 ### Links úteis
 
-> [Manual do mundo](https://youtu.be/gcBN4NLqz_U)
+- [IDE Arduino](https://www.arduino.cc/en/Main/Software)
+ 
+- [Documentação sintaxe C++](https://www.arduino.cc/reference/en/)
 
-> [Viral Science Creativity](https://www.viralsciencecreativity.com/post/arduino-rfid-sensor-mfrc522-tutorial)
+- [Fritzing](https://fritzing.org/home/) - Licença comercial
 
-> [Eletro Gate](https://blog.eletrogate.com/guia-basico-da-nfc-para-arduino/)
+- [Fritzing](https://softfamous.com/fritzing/download/) - Versão gratuita (antiga mas permite que seja atualizada)
+
+- [TinkerCad](https://www.tinkercad.com) - Ambiente Virtual p/ prototipagem
+ 
+- [Project Hub](https://create.arduino.cc/projecthub/mixpose/pushup-counter-e3ed69?ref=platform&ref_id=424_trending___&offset=46)
+  
+- [Manual do mundo](https://youtu.be/gcBN4NLqz_U)
+
+- [Viral Science Creativity](https://www.viralsciencecreativity.com/post/arduino-rfid-sensor-mfrc522-tutorial)
+
+- [Eletro Gate](https://blog.eletrogate.com/guia-basico-da-nfc-para-arduino/)
 
 ###  Aplicações
-<p> Mecanismo anti-furto para itens de lojas </p>
-<p> Pagamento rápido sem digitação de senhas </p>
-<p> Autenticação ou autorização mediante apresentação de cartão/cracha </p>
+
+- Mecanismo anti-furto para itens de lojas 
+
+- Pagamento rápido sem digitação de senhas 
+
+- Autenticação ou autorização mediante apresentação de cartão/cracha 
 
 
 
